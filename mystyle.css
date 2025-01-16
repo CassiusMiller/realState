@@ -1,21 +1,105 @@
 /*headers*/
-header{
+.header-style{
     background-image: url(img/header.jpg);
     background-position: center,center;
     background-size: cover;
     height: 400px;
     color: white;
     text-align: center;
+
 }
 nav a{
     text-decoration: none;
     color: white;
 }
-/*global*/
+.menu-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+}
+.menu a{
+    margin-right: 30px;
+    color: white;
+}
+/*general*/
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: Arial;
+}
+img{
+    max-width: 100%;
+}
+p{
+    line-height: 2;
+}
+h2,h3{
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.container{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
 
 
+/*more about us*/
+.more-about-container{
+    display: flex;
+    flex-direction: row;
+}
+.more-about-item{
+    padding: 10px;
+}
 
 
+/*houses*/
+.houses-container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.houses-item{
+    border: solid 1px;
+    background-color: lightgray;
+}
+.houses-item-img{
+    min-width: 100%;
+}
+.houses-item-text{
+    padding: 20px;
+}
+.list-icons{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    list-style: none;
+    gap: 20px;
+}
+.list-icons li{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100px;
+}
+.houses-price{
+    color: green;
+}
+.houses-btn{
+    text-align: center;
+    display: block;
+    color: white;
+    background-color: orange;
+    padding: 10px;
+    margin-top: 10px;
+}
 /*utilies*/
 
 
