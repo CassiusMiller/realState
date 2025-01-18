@@ -6,11 +6,13 @@
     height: 400px;
     color: white;
     text-align: center;
-
 }
-nav a{
+a{
     text-decoration: none;
-    color: white;
+}
+.contact-menu a{
+    margin-right: 30px;
+    color: black;
 }
 .menu-bar{
     display: flex;
@@ -19,7 +21,7 @@ nav a{
     align-items: center;
     padding-top: 20px;
 }
-.menu a{
+.index-menu a{
     margin-right: 30px;
     color: white;
 }
@@ -27,9 +29,6 @@ nav a{
 *{
     padding: 0;
     margin: 0;
-}
-body{
-    font-family: Arial;
 }
 img{
     max-width: 100%;
@@ -45,6 +44,17 @@ h2,h3{
     width: 80%;
     margin-right: auto;
     margin-left: auto;
+}
+html,body{
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: arial;
+}
+main{
+    flex: 1;
 }
 
 
@@ -66,7 +76,6 @@ h2,h3{
     justify-content: center;
     align-items: center;
 }
-
 .houses-item{
     border: solid 1px;
     background-color: lightgray;
@@ -99,6 +108,73 @@ h2,h3{
     background-color: orange;
     padding: 10px;
     margin-top: 10px;
+}
+
+
+/*contact*/
+.contact-header{
+    background-color: orange;
+    background-position: center,center;
+    background-size: cover;
+    height: 300px;
+    color: black;
+    text-align: center;
+}
+.contact-text{
+    text-align: center;
+
+}
+.contact-text p{
+    font-size: 14px;
+    line-height: 1.5;
+}
+.contact-form{
+    margin: 30px;
+    background-color: lightgray;
+    padding: 10px;
+    border-radius: 10px;
+}
+fieldset{
+    bottom: 1px solid gray;
+    padding: 10px;
+    border-radius: 10px;
+}
+legend{
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.form-control{
+    display: flex;
+    margin: 20px;
+}
+.form-control label{
+    width: 25%;
+}
+.form-control input, .form-control textarea{
+    width: 75%;
+}
+.contact-footer{
+    display: flex;
+    justify-content: space-around;
+    height: 250px;
+    margin-top: 30px;
+    background-color: lightgray;
+    align-items: center;
+}
+.footer-icons{
+    justify-content: space-between;
+}
+.contact-footer label{
+    display: inline-block;
+    border: 1px solid black;
+    padding: 10px;
+    width: 20px;
+    border-radius: 50%;
+    text-align: center;
+}
+.contact-info{
+    padding-bottom: 100px;
 }
 /*utilies*/
 
